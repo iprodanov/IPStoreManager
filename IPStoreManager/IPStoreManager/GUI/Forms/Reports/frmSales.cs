@@ -91,7 +91,7 @@ namespace IPStoreManager.GUI.Forms.Reports
         private void CalculateTotal(List<SaleItem> saleItems)
         {
             decimal total = saleItems.Sum(item => item.Product.Price * item.Quantity);
-            tbTotal.Text = String.Format("{0:c}", 1528.65m);
+            tbTotal.Text = String.Format("{0:c}", total);
             
         }
 
@@ -107,7 +107,14 @@ namespace IPStoreManager.GUI.Forms.Reports
         private void frmSales_Load(object sender, EventArgs e)
         {
             LoadSalesData();
-            CalculateTotal(allSaleItems);
+            if (bsSales.Current != null)
+            {
+                CalculateTotal(allSaleItems);
+            }
+            else
+            {
+                tbTotal.Text = String.Empty;
+            }
             AdjustAvailabilityControls();
         }
 

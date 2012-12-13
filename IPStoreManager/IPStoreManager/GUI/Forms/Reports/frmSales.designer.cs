@@ -41,14 +41,14 @@
             this.toolStripLabel2 = new System.Windows.Forms.ToolStripLabel();
             this.tstbText = new System.Windows.Forms.ToolStripTextBox();
             this.dgvSales = new System.Windows.Forms.DataGridView();
-            this.lblTotal = new System.Windows.Forms.Label();
-            this.tbTotal = new System.Windows.Forms.TextBox();
             this.DateColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ItemIDColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SaleIDColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ProductNameColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.QuantityColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.PriceColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.lblTotal = new System.Windows.Forms.Label();
+            this.tbTotal = new System.Windows.Forms.TextBox();
             this.toolStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvSales)).BeginInit();
             this.SuspendLayout();
@@ -148,26 +148,6 @@
             this.dgvSales.TabIndex = 3;
             this.dgvSales.DataBindingComplete += new System.Windows.Forms.DataGridViewBindingCompleteEventHandler(this.dgvSales_DataBindingComplete);
             // 
-            // lblTotal
-            // 
-            this.lblTotal.AutoSize = true;
-            this.lblTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lblTotal.Location = new System.Drawing.Point(418, 247);
-            this.lblTotal.Name = "lblTotal";
-            this.lblTotal.Size = new System.Drawing.Size(49, 20);
-            this.lblTotal.TabIndex = 4;
-            this.lblTotal.Text = "Total";
-            // 
-            // tbTotal
-            // 
-            this.tbTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.tbTotal.Location = new System.Drawing.Point(473, 244);
-            this.tbTotal.Name = "tbTotal";
-            this.tbTotal.ReadOnly = true;
-            this.tbTotal.Size = new System.Drawing.Size(120, 26);
-            this.tbTotal.TabIndex = 5;
-            this.tbTotal.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
             // DateColumn
             // 
             this.DateColumn.HeaderText = "Date";
@@ -222,6 +202,26 @@
             this.PriceColumn.Name = "PriceColumn";
             this.PriceColumn.ReadOnly = true;
             this.PriceColumn.Width = 70;
+            // 
+            // lblTotal
+            // 
+            this.lblTotal.AutoSize = true;
+            this.lblTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lblTotal.Location = new System.Drawing.Point(418, 247);
+            this.lblTotal.Name = "lblTotal";
+            this.lblTotal.Size = new System.Drawing.Size(49, 20);
+            this.lblTotal.TabIndex = 4;
+            this.lblTotal.Text = "Total";
+            // 
+            // tbTotal
+            // 
+            this.tbTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.tbTotal.Location = new System.Drawing.Point(473, 244);
+            this.tbTotal.Name = "tbTotal";
+            this.tbTotal.ReadOnly = true;
+            this.tbTotal.Size = new System.Drawing.Size(120, 26);
+            this.tbTotal.TabIndex = 5;
+            this.tbTotal.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // frmSales
             // 
